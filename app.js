@@ -1,3 +1,5 @@
+import React, { Component } from 'react';
+
 class App extends React.Component {
     constructor(props) {
         super(props);
@@ -35,15 +37,9 @@ class App extends React.Component {
 
         return (
             <div>
-                <h1>blog posts</h1>
-                <ul>
-                    {blogs.map(blog => (
-                        <li key={blog.id}>
-                            <h2>{blog.title}</h2>
-                            <p>{blog.content}</p>
-                        </li>
-                    ))}
-                </ul>
+                <h1>Hola, Mundo!</h1>
+                <img src="./adidastrainers.jpg" alt="tenis" />
+                <p>Este es un sitio web simple construido con React y Babel.</p>
             </div>
         );
     }

@@ -1,0 +1,19 @@
+.image {
+    width: 200px;
+    height: auto;
+    justify-content: center;
+}
+
+.imagen {
+    width: 500px;
+    height: auto;
+    justify-content: center;
+    text-align: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 10;
+    color: hsl(0, 0%, 20%);
+    align-items: center;
+}

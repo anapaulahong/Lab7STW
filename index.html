@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple React Website with Babel</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div id="root"></div>
@@ -16,12 +17,23 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
 
     <script type="text/babel">
-        // Componente de ejemplo
+        // Componente de ejemplo 735x840
         function App() {
             return (
                 <div>
-                    <h1>Hola, Mundo!</h1>
+                    <h1>Trends 2024</h1>
+                    <div class="imagecontainer">
+                        <img src="./adidastrainers.jpg" alt="tenis" className="image"></img>
+                        <img src="./leopard.jpg" alt="pantalon de leopardo" className="image"></img>
+                        <img src="./copenhagen.jpg" alt="blusa estilo copenhagen" className="image"></img>
+                        <img src="./joyeria.jpg" alt="joyeria maximalista" className="image"></img>
+                    </div> 
                     <p>Este es un sitio web simple construido con React y Babel.</p>
+                    <p>A medida que avanzamos en el 2024 hay algunos cambios de estilo interesantes que han llamado la atención de muchos. Desde patrones vanguardistas hasta joyas maximalistas y el revival de algunos clásicos bastante queridos. Quédate leyendo para mantenerte al día de las tendencias y estar a la moda ;)</p>
+                    <h3>Adidas Trainers</h3>
+                    <img src="./adidas.png" alt="tenis" className="imagen"></img>
+                    <p>Este año, invertir en unos tenis coloridas es un must. Desde Onitsuka Tigers hasta Adidas Spezials, tu calzado es la forma perfecta para infundir color a tu outfit sin que se vuelva agobiante. También puedes combinar estratégicamente el color de tus zapatos con un elemento de tu outfit para lograr un look simetrico.</p>
+
                 </div>
             );
         }
@@ -32,5 +44,8 @@
             document.getElementById('root')
         );
     </script>
+    <!-- <script src="blogList.js" type="text/babel"></script>
+    <script src="blogPosts.js" type="text/babel"></script> -->
+    
 </body>
 </html>
