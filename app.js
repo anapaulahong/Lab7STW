@@ -37,7 +37,7 @@ class App extends React.Component {
 
         return (
             <div>
-                <h1>Hola, Mundo!</h1>
+                <h1>Trends 2024</h1>
                 <img src="./adidastrainers.jpg" alt="tenis" />
                 <p>Este es un sitio web simple construido con React y Babel.</p>
             </div>
