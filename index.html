@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pau's Digital Diary</title>
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/f64f36f8d2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -18,7 +22,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
 
     <header>
-        <a href="#" class="logo">pau's digital diary</a>
+        <a href="#" class="logo">
+            <img src="imagenes/logo.png" alt="logo">
+        </a>
         <ul>
             <li><a href="#">home</a></li>
             <li><a href="#">about</a></li>
@@ -26,71 +32,125 @@
             <li><a href="#">contact</a></li>
         </ul>
     </header>
-    <section class="banner"></section>
+
     <script type="text/babel">
         window.addEventListener("scroll", function(){
             var header = document.querySelector("header");
             header.classList.toggle("sticky", window.scrollY > 0);
         })
+
+    
         // Componente de ejemplo 735x840
         function App() {
             return (
                 
-                <div class="posts">
-                    <h1>Trends 2024</h1>
-                    <div class="imagecontainer">
-                        <img src="./adidastrainers.jpg" alt="tenis" className="image"></img>
-                        <img src="./leopard.jpg" alt="pantalon de leopardo" className="image"></img>
-                        <img src="./copenhagen.jpg" alt="blusa estilo copenhagen" className="image"></img>
-                        <img src="./joyeria.jpg" alt="joyeria maximalista" className="image"></img>
-                    </div>
-
-                    <div class="container-footer">
-                        <footer>
-                            <div class="logo-footer">
-                                <img src="./logoxd" alt="logo blog"></img>
-                            </div>
-                            <div class="socials-footer">
-                                <a href="#"><i class="fa-brands fa-instagram icon-socials-footer"></i></a>
-                                <a href="#"><i class="fa-brands fa-pinterest icon-socials-footer"></i></a>
-                                <a href="#"><i class="fa-brands fa-spotify icon-socials-footer"></i></a>
-                            </div>
-
-                            <hr>
-                            <h4>2024 Pau's Digital Diary - Todos los derechos reservados</h4>
-                            </hr>
-                        </footer>
-                    </div>
-
-                    <p>Este es un sitio web simple construido con React y Babel.</p>
+                <div class="inicio">
+                    <h1>Welcome to Pau&#39;s Digital Diary! Un blog virtual sobre moda.</h1>
                     <p>A medida que avanzamos en el 2024 hay algunos cambios de estilo interesantes que han llamado la atención de muchos. Desde patrones vanguardistas hasta joyas maximalistas y el revival de algunos clásicos bastante queridos. Quédate leyendo para mantenerte al día de las tendencias y estar a la moda ;)</p>
-                    <h2>Adidas Trainers</h2>
-                    <img src="./adidas.png" alt="tenis" className="imagen"></img>
-                    <p>Este año, invertir en unos tenis coloridas es un must. Desde Onitsuka Tigers hasta Adidas Spezials, tu calzado es la forma perfecta para infundir color a tu outfit sin que se vuelva agobiante. También puedes combinar estratégicamente el color de tus zapatos con un elemento de tu outfit para lograr un look simetrico.</p>
-                    <h2>Leopard print</h2>
-                    <img src="./leopardoutfits.png" alt="tenis" className="imagen"></img>
-                    <h2>Joyería maximalista</h2>
-                    <img src="./leopardoutfits.png" alt="tenis" className="imagen"></img>
                 </div>
                 
             );
         }
-
 
         // Renderizar el componente en el DOM
         ReactDOM.render(
             <App />,
             document.getElementById('root')
         );
+
+        
     </script>
 
+    <section id="posts">
+        <div class="recentposts">
+            <h3>Posts recientes</h3>
+        </div>
+        <!--box 1-->
+        <div class="blog-container">
+            <div class="blog-box">
+                <div class="blogimg">
+                    <img src="imagenes/gazelle.jpg" alt="tenis gazelle adidas">
+                </div>
+
+                <div class="blog-text">
+                    <span>3 de abril 2024 / Footwear</span>
+                    <a href="#" class="blog-title">Sneakers trends para el 2024</a>
+                    <p>Este año, invertir en unos tenis coloridas es un must. Desde Onitsuka Tigers hasta Adidas Spezials, tu calzado es la forma perfecta para infundir color a tu outfit sin que se vuelva agobiante. También puedes combinar estratégicamente el color de tus zapatos con un elemento de tu outfit para lograr un look simétrico.</p>
+                    <a href="#">Leer más</a>
+                </div>
+            </div>
+        </div>
+        <!--box 2-->
+        <div class="blog-container">
+            <div class="blog-box">
+                <div class="blogimg">
+                    <img src="imagenes/gazelle.jpg" alt="tenis gazelle adidas">
+                </div>
+
+                <div class="blog-text">
+                    <span>3 de abril 2024 / Footwear</span>
+                    <a href="#" class="blog-title">Sneakers trends para el 2024</a>
+                    <p>Este año, invertir en unos tenis coloridas es un must. Desde Onitsuka Tigers hasta Adidas Spezials, tu calzado es la forma perfecta para infundir color a tu outfit sin que se vuelva agobiante. También puedes combinar estratégicamente el color de tus zapatos con un elemento de tu outfit para lograr un look simétrico.</p>
+                    <a href="#">Leer más</a>
+                </div>
+            </div>
+        </div>
+        <!--box 3-->
+        <div class="blog-container">
+            <div class="blog-box">
+                <div class="blogimg">
+                    <img src="imagenes/gazelle.jpg" alt="tenis gazelle adidas">
+                </div>
+
+                <div class="blog-text">
+                    <span>3 de abril 2024 / Footwear</span>
+                    <a href="#" class="blog-title">Sneakers trends para el 2024</a>
+                    <p>Este año, invertir en unos tenis coloridas es un must. Desde Onitsuka Tigers hasta Adidas Spezials, tu calzado es la forma perfecta para infundir color a tu outfit sin que se vuelva agobiante. También puedes combinar estratégicamente el color de tus zapatos con un elemento de tu outfit para lograr un look simétrico.</p>
+                    <a href="#">Leer más</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container-footer">
+        <footer>
+            <div class="logo-footer">
+                <img src="imagenes/logo.png" alt="logo blog" className="imagen">
+            </div>
+            
+            <div class="socials-footer">
+                <a href="https://www.instagram.com/paulihong/"><i class="fa-brands fa-instagram icon-socials-footer"></i></a>
+                <a href="https://www.pinterest.com/lilacf4iry/"><i class="fa-brands fa-pinterest icon-socials-footer"></i></a>
+                <a href="https://open.spotify.com/user/anapaulahong?si=fb4117151b804eb7"><i class="fa-brands fa-spotify icon-socials-footer"></i></a>
+            </div>
+
+            <hr>
+            <h4>2024 Pau's Digital Diary - Todos los derechos reservados</h4>
+            
+        </footer>
+    </div>
+
+    
+
     <script src="header.js" type="text/babel"></script>
+    <script type="text/javascript" src="posts.js"></script>
+    <!--<script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function() {
+            renderPosts();
+        });
+    </script> -->
     <script src="footer.js" type="text/babel"></script>
-    <script src="sidebar.js" type="text/babel"></script>
     
     
     <!-- <script src="blogList.js" type="text/babel"></script>
     <script src="blogPosts.js" type="text/babel"></script> -->
     
+    <!--<h2>Adidas Trainers</h2>
+                    <img src="imagenes/adidas.png" alt="tenis" className="imagen"></img>
+                    <p>Este año, invertir en unos tenis coloridas es un must. Desde Onitsuka Tigers hasta Adidas Spezials, tu calzado es la forma perfecta para infundir color a tu outfit sin que se vuelva agobiante. También puedes combinar estratégicamente el color de tus zapatos con un elemento de tu outfit para lograr un look simetrico.</p>
+                    <h2>Leopard print</h2>
+                    <img src="imagenes/leopardoutfits.png" alt="tenis" className="imagen"></img>
+                    <h2>Joyería maximalista</h2>
+                    <img src="imagenes/leopardoutfits.png" alt="tenis" className="imagen"></img>-->
 </body>
 </html>

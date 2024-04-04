@@ -21,7 +21,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: Quicksand;
     margin: 10;
     color: hsl(0, 0%, 20%);
     align-items: center;
@@ -29,15 +29,25 @@ body {
     min-height: 200vh;
 }
 
-.posts {
-    padding: 20px;
-    background-color: #f9f9f9;
-    margin-top: 40px;
+body .h1{
+    text-align: center;
 }
 
-.posts h1 {
-    font-size: 24px;
-    margin-bottom: 10px;
+body .inicio h1{
+    text-align: center;
+}
+
+body .inicio p{
+    font-size: 15px;
+    text-align: center;
+    margin-top: 10px;
+    font-family: Poppins;
+}
+
+.inicio {
+    padding: 20px;
+    background-color: #ffffff;
+    margin-top: 90px;
 }
 
 header{
@@ -45,23 +55,20 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #ffffff;
+    height: auto;
+    background-color: #fff8fa;
     display: flex;
     justify-content: space-between;
     align-items: center;
     transition: 0.6s;
-    padding: 40px 100px;
+    padding: 5px 100px;
     z-index: 1000;
 }
 
-header .logo{
+header .logo img{
+    width: 120px;
+    height: auto;
     position: relative;
-    font-weight: 700;
-    color: #131212;
-    text-decoration: none;
-    font-size: 2em;
-    text-transform: uppercase;
-    letter-spacing: 2px;
     transition: 0.6s;
     z-index: 100000;
 }
@@ -93,12 +100,6 @@ header ul li a{
     transition: 0.6s; 
 }
 
-.banner{
-    position: bottom;
-    width: 100%;
-    height: 100vh;
-    background-color: aliceblue;
-}
 
 header.sticky .logo,
 header.sticky ul li a{
@@ -109,8 +110,8 @@ header.sticky ul li a{
 .container-footer{
     width: 100%;
     padding: 40px;
-    background: #ffffff;
-    margin-top: 40px;
+    background: #fff8fa;
+    margin-top: 10px;
 }
 
 .container-footer footer{
@@ -123,13 +124,13 @@ header.sticky ul li a{
 }
 
 .container-footer footer .logo-footer img{
-    width: 100px;
+    width: 200px;
 }
 
 .container-footer footer .socials-footer{
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .container-footer footer .socials-footer .icon-socials-footer{
@@ -140,6 +141,9 @@ header.sticky ul li a{
     align-items: center;
     display: flex;
     justify-content: center;
+    border-radius: 100%;
+    color: #ffffff;
+    background: #000000;
 }
 
 .container-footer footer .socials-footer .fa-instagram:hover{
@@ -155,4 +159,112 @@ header.sticky ul li a{
 .container-footer footer .socials-footer .fa-spotify:hover{
     background: #1ED760;
     color: #ffffff;
+}
+.socials-footer a {
+    text-decoration: none;
+}
+.container-footer footer hr{
+    margin-top: 20px;
+    border: none;
+    height: 1px;
+    background: #8e8e8e;
+}
+
+.container-footer footer h4{
+    text-align: center;
+    margin-top: 40px;
+    color: #8e8e8e;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+#bloghome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    border-bottom: 1px solid;
+}
+
+.recentposts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.recentposts span{
+    color: #E37383;
+}
+.recentposts h3{
+    font-size: 14px;
+    color: #2b2b2b;
+    font-weight: 600;
+
+}
+#bloghome {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.blog-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+    flex-wrap: wrap;
+}
+.blog-box{
+    width: 330px;
+    background: #ffffff;
+    border: 1px solid #ececec;
+    margin: 20px;
+}
+.blogimg{
+    width: 100%;
+    height: auto;
+}
+.blogimg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.blog-text{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.blog-text span{
+    color: #E37383; /*rosadito del texto de las fechas*/ 
+    font-size: 0.9rem;
+}
+.blog-text .blog-title{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #2b2b2b;
+    text-decoration: none;
+}
+.blog-text .blog-title:hover{
+    color: #E37383;
+    transition: all ease 0.3s;
+}
+.blog-text p{
+    color: #9b9b9b;
+    font-size: 0.9rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 20px 0px;
+}
+.blog-text a{
+    color: #0f0f0f;
+}
+.blog-text a:hover{
+    color: #E37383;
+    transition: all ease 0.3s;
 }
