@@ -16,12 +16,26 @@
     <!-- Babel CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
 
+    <header>
+        <a href="#" class="logo">pau's digital diary</a>
+        <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">pages</a></li>
+            <li><a href="#">contact</a></li>
+        </ul>
+    </header>
+    <section class="banner"></section>
     <script type="text/babel">
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
         // Componente de ejemplo 735x840
         function App() {
             return (
                 
-                <div>
+                <div class="posts">
                     <h1>Trends 2024</h1>
                     <div class="imagecontainer">
                         <img src="./adidastrainers.jpg" alt="tenis" className="image"></img>
@@ -51,8 +65,10 @@
         );
     </script>
 
-    <script src="sidebar.js" type="text/babel"></script>
     <script src="header.js" type="text/babel"></script>
+
+    <script src="sidebar.js" type="text/babel"></script>
+    
     
     <!-- <script src="blogList.js" type="text/babel"></script>
     <script src="blogPosts.js" type="text/babel"></script> -->
