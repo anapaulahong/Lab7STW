@@ -94,7 +94,7 @@ header ul li a{
 }
 
 .banner{
-    position: relative;
+    position: bottom;
     width: 100%;
     height: 100vh;
     background-color: aliceblue;
@@ -104,4 +104,55 @@ header.sticky .logo,
 header.sticky ul li a{
     color: #000;
 
+}
+
+.container-footer{
+    width: 100%;
+    padding: 40px;
+    background: #ffffff;
+    margin-top: 40px;
+}
+
+.container-footer footer{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.container-footer footer .logo-footer{
+    text-align: center;
+}
+
+.container-footer footer .logo-footer img{
+    width: 100px;
+}
+
+.container-footer footer .socials-footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.container-footer footer .socials-footer .icon-socials-footer{
+    font-size: 20px;
+    margin: 20px;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.container-footer footer .socials-footer .fa-instagram:hover{
+    background: linear-gradient(to top right, #FCDE30, #E9712A, #D2313B, #AE4198, #7540A1, #5443a8 );
+    color: #ffffff;
+}
+
+.container-footer footer .socials-footer .fa-pinterest:hover{
+    background: #BD081C;
+    color: #ffffff;
+}
+
+.container-footer footer .socials-footer .fa-spotify:hover{
+    background: #1ED760;
+    color: #ffffff;
 }
